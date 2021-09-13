@@ -81,9 +81,12 @@
         </table>
     </section>
     <footer>
+        <div class="btn">
+            <span class="fas fa-bars"></span>
+        </div>
         <li>
-            <a href="#"> Contacts</a>
-            <ul>
+            <a href="#" class="cont-btn"> Contacts<span class="fas fa-caret-down first"></span></a>
+            <ul class="feat-show">
                 <li><a href="https://www.linkedin.com/in/koller-dániel-kd/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://github.com/kollerdaniel" target="_blank">GitHub</a></li>
             </ul>
@@ -96,10 +99,13 @@
 
     </footer>
     <script>
-        $(function() {
-            $(".btn").click(function() {
-                $(".submenu").slideToggle(500);
-            });
+        $('.btn').click(function() {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function() {
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
         });
     </script>
 </body>
