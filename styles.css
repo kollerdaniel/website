@@ -47,3 +47,7 @@ footer:visited {
 footer:link {
     color: white
 }
+
+footer:hover {
+    color: black
+}
