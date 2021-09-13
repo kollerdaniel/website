@@ -84,18 +84,21 @@
         <div class="btn">
             <span class="fas fa-bars"></span>
         </div>
-        <li>
-            <a href="#" class="cont-btn"> Contacts<span class="fas fa-caret-down first"></span></a>
-            <ul class="feat-show">
-                <li><a href="https://www.linkedin.com/in/koller-dániel-kd/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/kollerdaniel" target="_blank">GitHub</a></li>
-            </ul>
+        <nav>
+            <li>
+                <a href="#" class="cont-btn"> Contacts<span class="fas fa-caret-down first"></span></a>
+                <ul class="feat-show">
+                    <li><a href="https://www.linkedin.com/in/koller-dániel-kd/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/kollerdaniel" target="_blank">GitHub</a></li>
+                </ul>
 
-        </li>
+            </li>
 
-        <li>
-            <a href="Daniel Koller.pdf" target="_blank">This is my CV.</a>
-        </li>
+            <li>
+                <a href="Daniel Koller.pdf" target="_blank">This is my CV.</a>
+            </li>
+        </nav>
+
 
     </footer>
     <script>
@@ -106,6 +109,9 @@
         $('.feat-btn').click(function() {
             $('nav ul .feat-show').toggleClass("show");
             $('nav ul .first').toggleClass("rotate");
+        });
+        $('nav ul li').click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
         });
     </script>
 </body>
