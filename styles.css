@@ -39,15 +39,3 @@ footer {
     text-align: center;
     color: #868686;
 }
-
-footer:visited {
-    color: white
-}
-
-footer:link {
-    color: white
-}
-
-footer:hover {
-    color: black
-}
