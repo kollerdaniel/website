@@ -40,6 +40,20 @@ footer {
     color: #868686;
 }
 
+.cont-btn.click {
+    left: 260px;
+}
+
+.cont-btn span {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.cont-btn.click span:before {
+    content: '\f00d';
+}
+
 nav ul {
     background: #1b1b1b;
     height: 100%;
