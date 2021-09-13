@@ -47,7 +47,7 @@ footer {
 }
 
 .btn {
-    display: inline-block;
+    display: none;
     color: white;
     font-weight: 500;
     font-size: 1.25rem;
