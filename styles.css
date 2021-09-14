@@ -8,25 +8,24 @@ body {
 
 header {
     color: #FFFFFF;
-    background-color: #2d2d2d;
+    background-color: #3b3939;
     padding: 80px 0;
     text-align: center;
 }
 
 h1 {
     color: #202020;
-    background-color: #2d2d2d;
+    background-color: #3b3939;
     letter-spacing: .1em;
     text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
-    font-size: 45px;
 }
 
 #subTitle {
     color: #202020;
-    background-color: #2d2d2d;
+    background-color: #3b3939;
     letter-spacing: .1em;
     text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 img {
@@ -35,9 +34,8 @@ img {
 }
 
 section {
-    padding: 40px 0;
     text-align: center;
-    box-shadow: 0px 0px 20px black;
+    /* box-shadow: 0px 0px 20px black; */
 }
 
 .summary {

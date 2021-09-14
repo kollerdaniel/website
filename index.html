@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css" integrity="sha512-braXHF1tCeb8MzPktmUHhrjZBSZknHvjmkUdkAbeqtIrWwCchhcpUeAf2Sq3yIq1Q1x5PlroafjceOUbIE3Q5g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
     <style>
         table {
             border-collapse: collapse;
@@ -50,30 +54,50 @@
 </head>
 
 <body>
-    <header>
-        <h1>Koller Dániel</h1>
-        <p id="subTitle"><strong>Software Engineer Student</strong></p>
-        <img src="1.jpg" height="250px" width="200px" alt="" />
+    <header class="block">
+        <div class="text-header py-5">
+            <h1 class="text-4xl font-bold">Koller Dániel</h1>
+            <p id="subTitle"><strong>Software Engineer Student</strong></p>
+        </div>
+        <img src="1.jpg" alt="" class="mx-auto shadow-lg rounded-2xl" width="200" />
     </header>
-    <section class="summary">
+    <section class="summary rounded-t-2xl">
         <h2 class="summaryTitle"><i>Summary</i></h2>
         <p><i>Deadline-oriented software engineer student whit data enthusiast point of view. I am looking for an internship</i></p>
         <p>I am studying to be an IT engineer <br> at the Óbuda University, where I chose <br> Big Data and Business Intelligence specialization. <br> Later I want to be data engineer or data scientist or I want to work with big data.
         </p>
     </section>
-    <section class="education">
-        <h2 id="educationTitle"><b>Education</b></h2>
-        <ul>
-            <li><b>Óbuda University</b>
-                <p>John von Neumann Faculty of Informatics | Big Data and Business Intelligence Specialization</p>
-            </li>
-            <li><b>Ady Endre High School (Ráckeve)</b>
-                <p>My advanced final exam was five in informations technology.</p>
-            </li>
-        </ul>
+    <section class="block" style="background-color: #FFFFFF;">
+        <div class="education shadow-2xl rounded-t-2xl py-3">
+            <h2 id="educationTitle"><b>Education</b></h2>
+            <ul>
+                <li><b>Óbuda University</b>
+                    <p>John von Neumann Faculty of Informatics | Big Data and Business Intelligence Specialization</p>
+                </li>
+                <li><b>Ady Endre High School (Ráckeve)</b>
+                    <p>My advanced final exam was five in informations technology.</p>
+                </li>
+            </ul>
+        </div>
+
     </section>
-    <section class="technologies">
-        <table border="1">
+    <section class="technologies rounded-t-2xl">
+        <h3>Technologies</h3>
+        <div class="grid">
+            <div class="grid-cols-4 bg-red-300">
+                <ul>
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                    <li>asd</li>
+                </ul>
+            </div>
+            <div class="grid-cols-3 bg-blue-300">
+                asd
+            </div>
+        </div>
+
+        <table border="9">
             <tr>
                 <th>Technologies</th>
                 <td>C#</td>
@@ -84,7 +108,7 @@
             </tr>
         </table>
     </section>
-    <footer>
+    <footer class="rounded-t-2xl">
         <div class="container">
             <li>
                 <a class="btn"> Contacts <i class="bi bi-arrow-down-circle-fill le_nyil" style="display: inline-block;"></i></a>
