@@ -1,143 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="author" content="Koller Daniel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koller Daniel</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css" integrity="sha512-braXHF1tCeb8MzPktmUHhrjZBSZknHvjmkUdkAbeqtIrWwCchhcpUeAf2Sq3yIq1Q1x5PlroafjceOUbIE3Q5g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-
-
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            border-radius: 12px;
-        }
-        
-        th,
-        td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        td:hover {
-            background-color: whitesmoke;
-        }
-        
-        a:link,
-        a:visited {
-            display: inline-block;
-            color: white;
-            font-weight: 500;
-            font-size: 1.25rem;
-            background-color: #284b63;
-            border: none;
-            border-radius: 5px;
-            padding: 12px 16px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        
-        a:hover,
-        a:active {
-            color: cadetblue;
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body>
-    <header class="block">
-        <div class="text-header py-5">
-            <h1 class="text-4xl font-bold">Koller Dániel</h1>
-            <p id="subTitle"><strong>Software Engineer Student</strong></p>
-        </div>
-        <img src="1.jpg" alt="" class="mx-auto shadow-lg rounded-2xl" width="200" />
-    </header>
-    <section class="summary rounded-t-2xl">
-        <h2 class="summaryTitle"><i>Summary</i></h2>
-        <p><i>Deadline-oriented software engineer student whit data enthusiast point of view. I am looking for an internship</i></p>
-        <p>I am studying to be an IT engineer <br> at the Óbuda University, where I chose <br> Big Data and Business Intelligence specialization. <br> Later I want to be data engineer or data scientist or I want to work with big data.
-        </p>
-    </section>
-    <section class="block" style="background-color: #FFFFFF;">
-        <div class="education shadow-2xl rounded-t-2xl py-3">
-            <h2 id="educationTitle"><b>Education</b></h2>
-            <ul>
-                <li><b>Óbuda University</b>
-                    <p>John von Neumann Faculty of Informatics | Big Data and Business Intelligence Specialization</p>
-                </li>
-                <li><b>Ady Endre High School (Ráckeve)</b>
-                    <p>My advanced final exam was five in informations technology.</p>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="nav container void-background">
+        <!-- This "nav-menu" is hidden on mobile -->
+        <!-- Add the modifier "is-active" to display it on mobile -->
+        <div class="nav-left">
+            <a href="https://github.com/kollerdaniel" target="_blank" class="nav-item">
+                <span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+            </a>
         </div>
 
-    </section>
-    <section class="technologies rounded-t-2xl">
-        <h3>Technologies</h3>
-        <div class="grid">
-            <div class="grid-cols-4 bg-red-300">
-                <ul>
-                    <li>asd</li>
-                    <li>asd</li>
-                    <li>asd</li>
-                    <li>asd</li>
-                </ul>
-            </div>
-            <div class="grid-cols-3 bg-blue-300">
-                asd
-            </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" href="#about">About</a>
+            <a class="nav-item" href="#projects">Projects</a>
+            <a class="nav-item" href="#social">Social</a>
         </div>
 
-        <table border="9">
-            <tr>
-                <th>Technologies</th>
-                <td>C#</td>
-                <td>SQL</td>
-                <td>Python</td>
-                <td>NoSQL</td>
-                <td>Git</td>
-            </tr>
-        </table>
-    </section>
-    <footer class="rounded-t-2xl">
+        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+        <span class="nav-toggle">
+				<span></span>
+        <span></span>
+        <span></span>
+        </span>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about" class="section section-1">
+        <div class="container has-text-centered">
+            <img class="avatar" src="1.jpg">
+        </div>
         <div class="container">
-            <li>
-                <a class="btn"> Contacts <i class="bi bi-arrow-down-circle-fill le_nyil" style="display: inline-block;"></i></a>
-                <div class="submenu">
-                    <a href="https://www.linkedin.com/in/koller-dániel-kd/" target="_blank">LinkedIn <i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/kollerdaniel" target="_blank">GitHub <i class="bi bi-github"></i></a>
-                </div>
-
-            </li>
-
-            <li>
-                <a href="Daniel Koller.pdf" target="_blank">This is my CV.</a>
-            </li>
+            </br>
+            <p class="intro nav-center"><i>Deadline-oriented software engineer student whit data enthusiast point of view.</i></p>
+            <p class="intro">I am studying to be an IT engineer at the Óbuda University, where I chose Big Data and Business Intelligence specialization. I am looking for an internship. Later I want to be data engineer or data scientist or I want to work with big data.
+            </p>
         </div>
+    </section>
 
-    </footer>
-    <script>
-        $(function() {
-            $(".submenu").hide();
-            $(".btn").click(function() {
-                $(".submenu").toggle();
-            });
-        });
-        $(function() {
-            $(".btn").click(function() {
-                $(this).children().toggleClass('rotate');
-            });
-        });
-    </script>
+    <!-- Projects -->
+    <section id="projects" class="section section-2">
+        <div class="container">
+            <div class="has-text-centered">
+                <h3 class="title is-3">Projects</h3>
+            </div>
+
+            <div class="columns is-multiline is-desktop">
+                <!-- Project 1 -->
+                <div class="column">
+                    <div class="box project-text">
+                        <article>
+                            <div>
+                                <a class="image project-figure" href="https://www.linkedin.com/in/koller-dániel-kd/">
+                                    <img src="good-programmer-banner-final.jpg" alt="Image" class="rounded-lg">
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                    They don’t want us to eat. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="column">
+                    <div class="box project-text">
+                        <article>
+                            <div>
+                                <a class="image project-figure" href="https://www.linkedin.com/in/koller-dániel-kd/">
+                                    <img src="upload2017-05-213987428.jpg" alt="Image" class="rounded-lg">
+                                </a>
+                            </div>
+                            <div>
+                                <p>
+                                    Bless up. Another one. How’s business? Boomin. Don’t ever play yourself. Life is what you make it, so let’s make it.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social -->
+    <section id="social" class="section section-3">
+        <div class="container">
+            <div class="has-text-centered">
+                <h3 class="title is-3">Let's Socialize</h3>
+            </div>
+            <div class="social-container columns">
+                <div class="column is-6 has-text-centered">
+                    <a target="_blank" href="https://www.linkedin.com/in/koller-dániel-kd/"><img class="rounded-lg" src="assets/img/linkedin.png"></a>
+                </div>
+                <div class="column is-6 has-text-centered">
+                    <a target="_blank" href="https://www.facebook.com/koller.daniel.9/"><img class="rounded-lg" alt="" src="assets/img/facebook.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="section-4 has-text-centered container">
+        <a href="Daniel Koller.pdf" target="_blank">Koller Daniel</a>
+    </section>
+
+    <!-- Scripts  -->
+    <script src="controller.js"></script>
 </body>
 
 </html>
