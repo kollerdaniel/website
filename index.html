@@ -33,16 +33,18 @@
             color: white;
             font-weight: 500;
             font-size: 1.25rem;
-            background: #353535;
+            background-color: #284b63;
             border: none;
             border-radius: 5px;
             padding: 12px 16px;
             cursor: pointer;
+            text-decoration: none;
         }
         
         a:hover,
         a:active {
             color: cadetblue;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -50,17 +52,17 @@
 <body>
     <header>
         <h1>Koller Dániel</h1>
-        <p><strong>Software Engineer Student</strong></p>
+        <p id="subTitle"><strong>Software Engineer Student</strong></p>
         <img src="1.jpg" height="250px" width="200px" alt="" />
     </header>
     <section class="summary">
-        <h2><i>Summary</i></h2>
+        <h2 class="summaryTitle"><i>Summary</i></h2>
         <p><i>Deadline-oriented software engineer student whit data enthusiast point of view. I am looking for an internship</i></p>
         <p>I am studying to be an IT engineer <br> at the Óbuda University, where I chose <br> Big Data and Business Intelligence specialization. <br> Later I want to be data engineer or data scientist or I want to work with big data.
         </p>
     </section>
     <section class="education">
-        <h2><i>Education</i></h2>
+        <h2 id="educationTitle"><b>Education</b></h2>
         <ul>
             <li><b>Óbuda University</b>
                 <p>John von Neumann Faculty of Informatics | Big Data and Business Intelligence Specialization</p>
@@ -87,8 +89,8 @@
             <li>
                 <a class="btn"> Contacts <i class="bi bi-arrow-down-circle-fill le_nyil" style="display: inline-block;"></i></a>
                 <div class="submenu">
-                    <a href="https://www.linkedin.com/in/koller-dániel-kd/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/kollerdaniel" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/koller-dániel-kd/" target="_blank">LinkedIn <i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/kollerdaniel" target="_blank">GitHub <i class="bi bi-github"></i></a>
                 </div>
 
             </li>
