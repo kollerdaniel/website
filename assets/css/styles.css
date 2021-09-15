@@ -17,6 +17,8 @@ a:hover {
 section {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-left: initial;
+    padding-right: initial;
 }
 
 .section-1 {
@@ -54,6 +56,7 @@ a.nav-item:hover {
 }
 
 .avatar {
+    width: 224.02px;
     height: 280px;
     border-radius: 7%;
 }
@@ -72,6 +75,12 @@ a.nav-item:hover {
     margin: 0 auto 1rem auto;
     max-height: 512px;
     max-width: 512px;
+}
+
+.project-img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    border-radius: 0.125rem;
 }
 
 .project-text {
