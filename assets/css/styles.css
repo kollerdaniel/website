@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 html,
 body {
@@ -25,12 +26,52 @@ section {
     background: #063647;
 }
 
-.section-2 {
-    background-color: #052D3D;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #063647;
+    display: ruby;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh
 }
 
-.section-3 {
-    background-color: #0E282E;
+h1 {
+    color: #484848;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+}
+
+h1 span {
+    transition: .5s linear
+}
+
+h1:hover span:nth-child(1) {
+    margin-right: 5px
+}
+
+h1:hover span:nth-child(1):after {
+    content: "'";
+}
+
+h1:hover span:nth-child(2) {
+    margin-left: 30px
+}
+
+h1:hover span:nth-child(3) {
+    margin-left: 30px
+}
+
+h1:hover span {
+    color: whitesmoke;
+    text-shadow: 0 0 10px slategray, 0 0 20px slategray, 0 0 40px slategray;
+}
+
+.section-2 {
+    background-color: #052D3D;
 }
 
 .section-4 {
@@ -66,24 +107,12 @@ a.nav-item:hover {
     padding-top: 1rem;
 }
 
-.social-container img {
-    max-width: 100%;
-    max-height: 175px;
-    margin-bottom: 15px;
-}
-
 .lista ul li {
     border-bottom: 1px solid rgb(38, 69, 82);
 }
 
 .lista ul li:last-child {
     border-bottom: none;
-}
-
-.soc-img {
-    border-radius: 5px;
-    max-width: 6%;
-    max-height: 175px;
 }
 
 .project-figure {
