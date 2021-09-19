@@ -153,6 +153,14 @@ a.nav-item:hover {
 }
 
 @media screen and (max-width: 768px) {
+    h1 {
+        color: #484848;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: monospace;
+        letter-spacing: 7px;
+        cursor: pointer
+    }
     .nav-menu {
         background-color: #063647;
     }
