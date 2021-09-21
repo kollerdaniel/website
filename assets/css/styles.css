@@ -97,9 +97,9 @@ a.nav-item:hover {
 }
 
 .avatar {
-    width: 224.02px;
-    height: 280px;
-    border-radius: 7%;
+    width: 250px;
+    height: 250px;
+    border-radius: 1%;
     text-align: center;
 }
 
